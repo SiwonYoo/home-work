@@ -29,7 +29,7 @@
         width: 150px;
         height: 150px;
         border-radius: 50%;
-        margin-bottom: 1.5rem;
+        margin-bottom: 0.3rem;
         object-fit: cover;
         border: 5px solid #f0f0f0;
       }
@@ -49,11 +49,13 @@
 
       .homework-links {
         display: flex;
-        justify-content: center;
-        gap: 1rem;
-        margin: 0;
+        flex-flow: column;
+        align-items: start;
+        gap: 0.3rem;
+        margin: 0 10px;
         padding: 0;
         list-style: none;
+        color: #555;
       }
 
       .homework-links a {
@@ -77,16 +79,27 @@
   </head>
   <body>
     <div class="profile-card">
-      <img src="./src/assets/images/jiwon.jpeg" alt="" class="profile-image" />
-      <h1 class="name">유시원</h1>
+      <img src="./src/assets/images/siwon.JPG" alt="" class="profile-image" />
+      <h1 class="name">시원</h1>
       <p class="bio">멋쟁이 사자처럼 프론트엔드 부트캠프 13기 유시원 입니다.</p>
       <p>과제 결과는 링크를 선택해주세요.</p>
+      <hr />
       <ul class="homework-links">
-        <li><a href="./src/md/markdown.md">마크다운 문법</a></li>
-        <li><a href="./src/md/retrospect.md">회고</a></li>
-        <li><a href="./src/avatars/avatars.html">avatars</a></li>
-        <li><a href="./src/login/login.html">login</a></li>
-        <li><a href="./src/login/login-component.html">login-component</a></li>
+        <li>
+          [2주차]
+          <a href="./src/md/markdown.md">마크다운 문법</a> |
+          <a href="./src/md/retrospect.md">회고</a>
+        </li>
+        <li>
+          [3주차]
+          <a href="./src/avatars/avatars.html">avatars</a> |
+          <a href="./src/avatars/avatars.md">회고</a>
+        </li>
+        <li>
+          [4주차]
+          <a href="./src/login/login.html">login</a> |
+          <a href="./src/login/login.md">회고</a>
+        </li>
       </ul>
     </div>
   </body>
