@@ -129,7 +129,7 @@ body {
     appearance: none;
 
     &::after {
-      margin-left: 6px;
+      margin-left: 5px;
       content: "OFF";
       font-size: var(--s-text-small);
       font-weight: var(--w-bold);
