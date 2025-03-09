@@ -1,0 +1,34 @@
+@import './card-component.css';
+
+/* 카드 레이아웃 */
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: var(--base-spacing);
+
+  > * {
+    grid-column: 1/3;
+  }
+
+  .ipad-pro {
+  }
+  .ipad-air {
+  }
+  .iphone-pro {
+  }
+
+  @media (min-width: 1024px) {
+    .iphone {
+      grid-column: 1/2;
+    }
+    .watch {
+      grid-column: 2/3;
+    }
+    .macbook-air {
+      grid-column: 1/2;
+    }
+    .airpods-pro {
+      grid-column: 2/3;
+    }
+  }
+}
